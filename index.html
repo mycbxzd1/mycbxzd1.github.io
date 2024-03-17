@@ -1,57 +1,72 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>个人主页</title>
-<style>
-  body { font-family: 'Arial', sans-serif; line-height: 1.6; }
-  .container { width: 80%; margin: auto; overflow: hidden; }
-  header { background: #50b3a2; color: white; padding-top: 30px; min-height: 70px; border-bottom: #e8491d 3px solid; }
-  header a { color: #ffffff; text-decoration: none; text-transform: uppercase; font-size: 16px; }
-  header ul { padding: 0; list-style: none; }
-  header li { float: left; display: inline; padding: 0 20px 0 20px; }
-  header #branding { float: left; }
-  header #branding h1 { margin: 0; }
-  header nav { float: right; margin-top: 10px; }
-  header .highlight, header .current a { color: #e8491d; font-weight: bold; }
-  header a:hover { color: #ffffff; font-weight: bold; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #666;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-<header>
-  <div class="container">
-    <div id="branding">
-      <h1><span class="highlight">我的</span> 主页</h1>
-    </div>
+    <header>
+        <h1>欢迎来到我的个人主页</h1>
+    </header>
     <nav>
-      <ul>
-        <li class="current"><a href="index.html">主页</a></li>
-        <li><a href="about.html">关于我</a></li>
-        <li><a href="contact.html">联系方式</a></li>
-      </ul>
+        <a href="#about">关于我</a>
+        <a href="#projects">项目</a>
+        <a href="#contact">联系我</a>
     </nav>
-  </div>
-</header>
-
-<div class="container">
-  <h1>欢迎来到我的个人主页！</h1>
-  <p>这里是我的个人信息，我的兴趣爱好，以及联系方式。</p>
-</div>
-
-<script>
-// 随机音乐播放器的JavaScript代码
-var musicList = [
-  'song1.mp3',
-  'song2.mp3',
-  'song3.mp3'
-];
-var music = new Audio();
-function playRandomMusic() {
-  music.src = musicList[Math.floor(Math.random() * musicList.length)];
-  music.play();
-}
-document.addEventListener('DOMContentLoaded', playRandomMusic);
-</script>
+    <section id="about">
+        <h2>关于我</h2>
+        <p>这里可以写一些关于你自己的介绍。</p>
+    </section>
+    <section id="projects">
+        <h2>项目</h2>
+        <p>这里可以列出你参与过的一些项目。</p>
+    </section>
+    <section id="contact">
+        <h2>联系我</h2>
+        <p>你可以在这里提供联系方式，比如电子邮件、社交媒体账号等。</p>
+    </section>
+    <footer>
+        <p>版权所有 &copy; 2024 我的个人主页</p>
+    </footer>
 </body>
 </html>
